@@ -16,6 +16,7 @@ body {
   font-family: "Poppins", sans-serif;
   background-color: var(--bg);
   color: #fff;
+  /* min-height: 2000px; */
 }
 
 .navbar {
@@ -78,6 +79,71 @@ body {
 
 #hamburger-menu {
   display: none;
+}
+
+/* Hero Section */
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background-image: url("../img/image.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-position-y: 40%;
+  position: relative;
+}
+
+.hero::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  height: 40%;
+  background: linear-gradient(
+    0deg,
+    rgba(1, 1, 3, 1) 5%,
+    rgba(255, 255, 255, 0) 30%
+  );
+}
+
+.hero .content {
+  padding: 1.4rem 7%;
+  padding-bottom: 14%;
+  max-width: 5 0rem;
+}
+
+.hero .content h1 {
+  font-size: 2em;
+  color: rgb(124, 50, 50);
+  text-shadow: 5px 5px 5px rgba(1, 1, 3, 0.5);
+  line-height: 1.2;
+  font-style: italic;
+}
+
+.hero .content .cta {
+  margin-top: 1rem;
+  display: inline-block;
+  padding: 0.5rem 2rem;
+  font-size: 1.4rem;
+  color: white;
+  background-color: var(--primary);
+  border-radius: 0.5rem;
+  box-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
+}
+
+.hero .content h1 span {
+  color: rgb(233, 123, 145);
+}
+
+.hero .content p {
+  text-shadow: 4px 4px 4px rgba(1, 1, 3, 0.5);
+  mix-blend-mode: difference;
+}
+
+.hero .content p span {
+  color: crimson;
 }
 
 /* Media Queries */
