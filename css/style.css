@@ -16,7 +16,7 @@ body {
   font-family: "Poppins", sans-serif;
   background-color: var(--bg);
   color: #fff;
-  /* min-height: 2000px; */
+  min-height: 9000px;
 }
 
 .navbar {
@@ -146,6 +146,88 @@ body {
   color: crimson;
 }
 
+/* About secstion */
+.about,
+.menu {
+  padding: 8rem 7% 1.4rem;
+}
+
+.about h2,
+.menu h2 {
+  text-align: center;
+  font-size: 2.1rem;
+  margin-bottom: 3rem;
+}
+
+.about h2 span,
+.menu h2 span {
+  color: var(--primary);
+}
+
+.about .row {
+  display: flex;
+}
+
+.about .row .about-img {
+  flex: 1 1 45rem;
+}
+
+.about .row .about-img img {
+  width: 100%;
+}
+
+.about .row .content {
+  flex: 1 1 35rem;
+  padding: 0 1rem;
+}
+
+.about .row .content h3 {
+  flex: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.about .row .content p {
+  margin-bottom: 0.8rem;
+  font-size: 1.1rem;
+  font-weight: 100;
+  line-height: 1.6rem;
+  text-align: justify;
+}
+
+/* Menu Section */
+.menu h2 {
+  margin-bottom: 1rem;
+}
+
+.menu p {
+  text-align: center;
+  max-width: 30rem;
+  margin: auto;
+  font-weight: 100;
+  line-height: 1.6;
+}
+
+.menu .row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 5rem;
+  justify-content: center;
+}
+
+.menu .row .item-card {
+  text-align: center;
+  padding-bottom: 4rem;
+}
+
+.menu .row .item-card img {
+  border-radius: 50%;
+  width: 80%;
+}
+
+.menu .row .item-card-title {
+  margin: 1rem auto 0.5rem;
+}
+
 /* Media Queries */
 /* Laptop */
 @media (max-width: 1336px) {
@@ -191,6 +273,29 @@ body {
 
   .navbar .navbar-nav a:hover::after {
     transform: scaleX(0.2);
+  }
+
+  .about .row {
+    flex-wrap: wrap;
+  }
+
+  .about .row .about-img img {
+    height: 24rem;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .about .row .content {
+    padding: 0;
+  }
+
+  .about .row .content h3 {
+    margin-top: 1rem;
+    font-size: 1.5rem;
+  }
+
+  .menu p {
+    font-size: 1.2rem;
   }
 }
 /* Mobile Phone */
